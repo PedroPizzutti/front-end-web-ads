@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+rewtertrecdfdddsdfdsfdsfdsfds<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <title>Recrutamento Online</title>
@@ -11,17 +11,26 @@
     <main>
       <section>
         <h2>Cadastre seu currículo</h2>
-        <form action="#" method="get">
+        <!-- Preenchido o action e o method -->
+         <!-- A foto é um arquivo, obriga o enctype ser multipart -->
+        <form action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
           <p>Preencha o formulário para se candidatar à vaga</p>
           <fieldset>
             <legend>Dados Pessoais</legend>
+            <!-- Campo novo de foto -->
+            <div>
+              <label for="foto_id">Foto:</label>
+              <input id="foto_id" name="foto" type="file" accept="image/*">
+            </div>
+            <!-- Adicionado placeholder -->
             <div>
               <label for="nome_id">Nome completo:</label>
-              <input id="nome_id" name="nome" type="text">
+              <input id="nome_id" name="nome" type="text" placeholder="João da Silva">
             </div>
+            <!-- Adicionado required -->
             <div>
               <label for="telefone_id">Telefone:</label>
-              <input id="telefone_id" name="telefone" type="tel">
+              <input id="telefone_id" name="telefone" type="tel" required>
             </div>
             <div>
               <label for="email_id">Email:</label>
